@@ -1,0 +1,121 @@
+*{
+    font-family: Arial;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(background.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.login-form{
+    background-color: rgba(239,230,230,0.05);
+    border: 2px solid rgba(253, 251, 251, 0.4);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 50px;
+    transform: translate(-50%,-50%);
+    backdrop-filter: blur(3px);
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+}
+
+.login-form h1{
+    margin: 0 0 30px;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+
+.login-form .user-input{
+    position: relative;
+}
+
+.user{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background-color: transparent;
+}
+
+.login-form .user-input label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: white;
+    pointer-events: none;
+    transition: 0.5s ease;
+}
+
+.login-form .user-input .user:focus ~ label,
+.login-form .user-input .user:valid ~ label{
+    font-size: 14px;
+    top: -15px;
+    left: 0;
+    color: white;
+}
+
+.login-form form .send{
+    margin: 0 auto;
+    position: relative;
+    display: inline-block;
+    padding: 10px 125px;
+    color:black;
+    font-size: 1rem;
+    background-color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s ease;
+    margin-top: 50px;
+    letter-spacing: 2px;
+    border: 2px solid white;
+}
+
+.login-form .send:hover{
+    background-color: transparent;
+    color: white;
+}
+
+.remember-forget{
+    color: white;
+}
+
+.forget{
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.forget-hover{
+    text-decoration: underline;
+}
+
+.register{
+    margin: 20px;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.reg{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.reg:hover{
+    text-decoration: underline;
+}
